@@ -1,7 +1,9 @@
 cmake_minimum_required(VERSION 2.8.6)
 
 set(VERSION "0.1")
-# $Format:Packaged from commit %H%nset(COMMIT %h)%nset(REFS "%d")$
+# Packaged from commit 72a389f63245f91fd2e8d10ceef340b3a6401ed8
+set(COMMIT 72a389f63)
+set(REFS " (HEAD -> master)")
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set(CMAKE_CONFIGURATION_TYPES Debug RelWithDebInfo Release CACHE TYPE INTERNAL)
@@ -91,7 +93,7 @@ else()
       set(CMAKE_AR gcc-ar)
       set(CMAKE_RANLIB gcc-ranlib)
     endif()
-    set(RELEASE_FLAGS "${RELEASE_FLAGS} -flto")
+    #set(RELEASE_FLAGS "${RELEASE_FLAGS} -flto")
   endif()
   #if(CMAKE_C_COMPILER_ID STREQUAL "GNU" AND NOT MINGW)
   #  set(RELEASE_FLAGS "${RELEASE_FLAGS} -fno-fat-lto-objects")
